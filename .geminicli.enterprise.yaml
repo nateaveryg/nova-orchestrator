@@ -1,6 +1,6 @@
 # CENTRALIZED ENTERPRISE POLICY - DO NOT MODIFY LOCALLY
-organization: "google-enterprise-demo"
-project_id: "nova-orchestrator-prod"
+organization: "averyn.joonix.net"
+project_id: "riccardo-blog-test-v1"
 
 telemetry:
   enabled: true
