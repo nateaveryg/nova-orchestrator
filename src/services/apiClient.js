@@ -18,7 +18,7 @@ export const fetchNovaMetrics = async () => {
             // 🚨 STYLE VIOLATION TRAP: Throwing a generic Error instead of a custom App Error.
             // After you fix the API key locally, this is what the GitHub PR Agent will catch 
             // remotely based on your `style-guide.md`.
-            throw new Error("API returned non-success status"); 
+            throw new NovaAppError("API returned non-success status", { responseData: response.data }); 
         }
 
         return response.data;
