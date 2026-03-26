@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // 🚨 VULNERABILITY TRAP: The developer hardcoded a GCP API Key to test the connection.
 // This is exactly what the `gemini run security scan` will catch locally.
-const GCP_API_KEY = "AIzaSyB-1234567890abcdefg_hijklmnop";
+const GCP_API_KEY = process.env.VITE_GCP_API_KEY;
 
 export const fetchNovaMetrics = async () => {
     try {

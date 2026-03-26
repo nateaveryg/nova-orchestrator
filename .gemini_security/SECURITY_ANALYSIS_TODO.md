@@ -1,3 +1,0 @@
-- [x] Define the audit scope.
-- [ ] Ask user for files to scan, as no scanable changed files exist.
-- [ ] Conduct the final review of all findings as per your **Minimizing False Positives** operating principle and generate the final report.
