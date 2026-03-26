@@ -23,6 +23,6 @@ export const fetchNovaMetrics = async () => {
 
         return response.data;
     } catch (error) {
-        throw new Error("Failed to fetch metrics: " + error.message);
+        throw new NovaAppError(`Failed to fetch metrics: ${error.message}`, { originalError: error });
     }
 };
